@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern To-Do App</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <div class="container">
+    <!-- Theme Toggle Switch -->
+    <div class="mode-toggle">
+      <label class="switch">
+        <input type="checkbox" id="mode-switch" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <h1>📋 To-Do List</h1>
+
+    <!-- Input Section -->
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Enter a new task..." />
+      <select id="priority-select">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button id="add-btn">➕</button>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-group">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button id="clear-btn">🗑 Clear All</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
