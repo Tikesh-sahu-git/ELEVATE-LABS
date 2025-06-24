@@ -21,7 +21,7 @@ Perfect for practicing modern front-end development without any frameworks.
 
 ## 📸 Preview
 
-![screenshot](https://via.placeholder.com/800x400.png?text=Todo+App+Preview) <!-- Replace with actual screenshot URL -->
+![screenshot](todo_app.png) <!-- Replace with actual screenshot URL -->
 
 ---
 
